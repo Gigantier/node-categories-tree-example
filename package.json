@@ -1,0 +1,19 @@
+{
+  "name": "node-categories-tree-example",
+  "version": "1.0.0",
+  "description": "Node Categories Tree Example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gigantier (https://gigantier.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "request": "^2.85.0",
+    "request-promise": "^4.2.2"
+  },
+  "engines": {
+    "node": ">= 6.4.0"
+  }
+}
