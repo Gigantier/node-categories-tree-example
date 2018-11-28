@@ -44,19 +44,6 @@ function buildUIData(categories) {
     category: map[c.id], 
     children: typeof groups[c.id]!== 'undefined' ? groups[c.id] : [] 
   }));
-
-  /*
-  let map = {};
-
-  categories
-    .filter(c => c.parentId == null)
-    .forEach(c => map[c.id] = { category: c, children: [] });
-
-  categories
-    .filter(c => c.parentId != null && typeof map[c.parentId] !== 'undefined')
-    .forEach(c => map[c.parentId].children.push(c));
-
-  return Object.values(map);*/
 }
 
 function getUIData() {

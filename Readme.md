@@ -7,8 +7,8 @@ Example how to use Gigantier API to print a category tree.
 ```shell
 npm install
 export API_HOST=https://yourhost
-export API_CLIENT_ID=changeme
-export API_CLIENT_SECRET=changeme
-export API_SCOPE=changeme
+export API_CLIENT_ID="changeme"
+export API_CLIENT_SECRET="changeme"
+export API_SCOPE="changeme"
 node index.js
 ```
