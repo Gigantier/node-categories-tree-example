@@ -4,16 +4,20 @@
   "description": "Node Categories Tree Example",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
+    "start": "npm run build && node dist/index.js"
   },
   "author": "Gigantier (https://gigantier.com/)",
   "license": "MIT",
-  "dependencies": {
-    "lodash": "^4.17.11",
-    "request": "^2.85.0",
-    "request-promise": "^4.2.2"
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "rimraf": "^2.6.2"
   },
-  "engines": {
-    "node": ">= 6.4.0"
+  "dependencies": {
+    "es6-promise": "^4.2.5",
+    "isomorphic-fetch": "^2.2.1"
   }
 }
