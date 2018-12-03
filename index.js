@@ -26,9 +26,9 @@ function getCategories(apiToken) {
 
 function printUIData(groups, [n, ...others], prefix) {
   if (typeof n !== 'undefined') {
-	  console.log(`${prefix}> ${n.name}`);
-	  printUIData(groups, (groups[n.id] || []), `${prefix}  `);
-	  printUIData(groups, others, prefix);	
+    console.log(`${prefix}> ${n.name}`);
+    printUIData(groups, (groups[n.id] || []), `${prefix}  `);
+    printUIData(groups, others, prefix);	
   }
 }
 
