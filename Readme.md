@@ -10,5 +10,5 @@ export API_HOST=https://yourhost
 export API_CLIENT_ID="changeme"
 export API_CLIENT_SECRET="changeme"
 export API_SCOPE="changeme"
-node index.js
+npm start
 ```
