@@ -17,11 +17,11 @@ function post(url, body) {
 }
 
 function getApiToken() {
-  return post(apiHost + tokenUri, tokenRequestBody).then(result => result.access_token);
+  return post(`${apiHost}${tokenUri}`, tokenRequestBody).then(result => result.access_token);
 }
 
 function getCategories(apiToken) {
-  return post(apiHost + categoriesUri, { 'access_token': apiToken, 'all': true }).then(result => result.menues);
+  return post(`${apiHost}${categoriesUri}`, { 'access_token': apiToken, 'all': true }).then(result => result.menues);
 }
 
 function printUIData(groups, [n, ...others], prefix) {
